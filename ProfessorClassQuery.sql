@@ -1,5 +1,5 @@
 
-/* -------------------- Professor vs Real Class Table
+/* -------------------- Professor vs Real Class Table ------------*/
 
 create table PROFESSOR_CLASS(id_professor integer, name_professor varchar(100),  id_professorclass integer);
 
@@ -10,7 +10,7 @@ insert into PROFESSOR_CLASS(id_professor, name_professor, id_professorclass) val
 
 
 
-/* -------------------- id Class vs Class Name Table
+/* -------------------- id Class vs Class Name Table------------*/
 create table CLASSES(id_class_c integer, title varchar(100));
 
 insert into CLASSES(id_class_c, title) values
@@ -25,7 +25,7 @@ insert into CLASSES(id_class_c, title) values
 
 
 
-/* -------------------- id Professor vs Classes that were given in the semester ----------------------------------------
+/* -------------------- id Professor vs Classes that were given in the semester ----------------------------------------*/
 
 create table SEMESTER_CLASS(id_professor_sem integer, name_class varchar(100), id_class integer);
 
@@ -40,7 +40,7 @@ insert into SEMESTER_CLASS(id_professor_sem, name_class, id_class) values
 (3, "Kelly", 3);
 
 
-/* -------------------- Q U E R Y ----------------------------------------
+/* -------------------- Q U E R Y ----------------------------------------------*/
 select name_professor, title
 
 from
